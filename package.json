@@ -1,0 +1,25 @@
+{
+  "name": "test-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "server": "node backend/server.js",
+    "dev": "concurrently \"npm run server\" \"wait-on http://localhost:3000 && npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^31.1.0",
+    "express": "^4.18.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "tabulator-tables": "^6.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0"
+  }
+}
